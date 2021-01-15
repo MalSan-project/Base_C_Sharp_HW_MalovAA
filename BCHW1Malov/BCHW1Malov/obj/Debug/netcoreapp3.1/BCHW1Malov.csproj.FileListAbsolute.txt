@@ -1,0 +1,13 @@
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.exe
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.deps.json
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.runtimeconfig.json
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.runtimeconfig.dev.json
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.dll
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\bin\Debug\netcoreapp3.1\BCHW1Malov.pdb
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.csprojAssemblyReference.cache
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.AssemblyInfoInputs.cache
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.AssemblyInfo.cs
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.csproj.CoreCompileInputs.cache
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.dll
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.pdb
+R:\Учёба\Разработчик игр\Основы С#\Lesson1\HW1\BCHW1Malov\BCHW1Malov\obj\Debug\netcoreapp3.1\BCHW1Malov.genruntimeconfig.cache

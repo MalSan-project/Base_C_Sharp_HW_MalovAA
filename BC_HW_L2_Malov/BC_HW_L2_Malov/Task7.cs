@@ -34,16 +34,14 @@ namespace BC_HW_L2_Malov
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <param name="sum"></param>
-        static void GetSumAllNumbers(int a, int b, int sum)
+        static int GetSumAllNumbers(int a, int b)
         {
-           if (a<=b)
+            if (a <= b)
             {
-                sum = sum + a;
-                a++;
-                GetSumAllNumbers(a, b, sum);                
-
-            } else
-            Console.WriteLine($"\nСумма всех чисел в данном диапазоне => {sum}");           
+                var sum = GetSumAllNumbers(a + 1, b);
+                return a + sum;
+            }
+            return 0;
         }
         /// <summary>
         /// Метод запуска 7-го задания. Рекурсивный метод вывода на экран всех чисел в заданном диапазоне & Рекурсивный метод подсчёта суммы чисел в заданном диапазоне и вывод его на экран
@@ -55,12 +53,12 @@ namespace BC_HW_L2_Malov
             int sum = 0;
             Console.WriteLine("Урок 2.Задание 7. \nДанная программа выведет все числа в заданном диапазоне, а так же подсчитает их сумму. и всё, используюя рекурсивный метод, наслаждайтесь.");
             Console.Write("Для начала введите нижнюю границу диапазона: ");
-            a=int.Parse(Console.ReadLine());
+            a = int.Parse(Console.ReadLine());
             Console.Write("А теперь, введите нижнюю границу диапазона: ");
             b = int.Parse(Console.ReadLine());
             Console.WriteLine($"Итак, у нас получились следующие числа: ");
             GetAllNumberRec(a, b);
-            GetSumAllNumbers(a, b, sum);
+            Console.WriteLine($"\nСумма этих чисел = {GetSumAllNumbers(a, b)}");
             Console.ReadKey();
             Console.Clear();
         }

@@ -1,0 +1,14 @@
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.exe.config
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.exe
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.pdb
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.csprojAssemblyReference.cache
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.csproj.CoreCompileInputs.cache
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.exe
+R:\Учёба\Разработчик игр\Основы С#\Lesson2\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.pdb
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.exe.config
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.exe
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\bin\Debug\BC_HW_L2_Malov.pdb
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.csprojAssemblyReference.cache
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.csproj.CoreCompileInputs.cache
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.exe
+R:\Git\Base_C_Sharp_HW_MalovAA\BC_HW_L2_Malov\BC_HW_L2_Malov\obj\Debug\BC_HW_L2_Malov.pdb

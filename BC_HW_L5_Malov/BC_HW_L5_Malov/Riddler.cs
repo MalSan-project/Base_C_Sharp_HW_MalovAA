@@ -86,6 +86,11 @@ namespace BC_HW_L5_Malov
             else
                 throw new FileNotFoundException();
         }
+        public void PrintAnswer()
+        {
+            foreach (string el in answer)
+                Console.Write(el + " | ");
+        }
         /// <summary>
         /// Метод запуска игры с рандомного вопроса
         /// </summary>
@@ -105,7 +110,9 @@ namespace BC_HW_L5_Malov
                 }
                 else
                 {
-                    Console.WriteLine($"Ответ не верный!\nПравельные ответы: {tempgame[numbquest].answer}\n{tempgame[numbquest].comment}");
+                    Console.WriteLine($"Ответ не верный!\nПравельные ответы: ");
+                    tempgame[numbquest].PrintAnswer();
+                    Console.WriteLine("\n" + tempgame[numbquest].comment);
                     tempgame=DeleteRiddle(numbquest, tempgame);
                 }
                 Console.Write($"Осталось {tempgame.Length} вопросов\nДля выхода нажмите 0\nПродолжаем?");
@@ -149,7 +156,8 @@ namespace BC_HW_L5_Malov
                 {
                     Console.WriteLine("И это...");
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine($"ПРАВИЛЬНЫЙ ОТВЕТ! \nВ зачёт идут ответы: {stage.answer}\n{stage.comment}");
+                    Console.WriteLine($"ПРАВИЛЬНЫЙ ОТВЕТ! \n {stage.comment}\nСписок ответов, считающихся правильными: ");
+                    stage.PrintAnswer();                    
                     PauseAndClear();
                     return true;
                 }

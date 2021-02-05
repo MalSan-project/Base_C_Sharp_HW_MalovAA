@@ -40,7 +40,7 @@ namespace BC_HW_L5_Malov
         public MyMessege(string _messege)
         {
             mes = _messege;
-            mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';', '>', '<', '-' }, StringSplitOptions.RemoveEmptyEntries);
+            mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';', '>', '<', '-','\n' }, StringSplitOptions.RemoveEmptyEntries);
         }
         /// <summary>
         /// Конструктор заполнения класса из файла
@@ -56,7 +56,7 @@ namespace BC_HW_L5_Malov
                 {
                     mes = mes+"\n"+el;
                 }                
-                mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';','>','<', '-' }, StringSplitOptions.RemoveEmptyEntries);
+                mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';','>','<', '-', '\n' }, StringSplitOptions.RemoveEmptyEntries);
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Сообщение из файла успешно получено!;)");
                 PauseAndClear();
@@ -71,7 +71,7 @@ namespace BC_HW_L5_Malov
         public MyMessege(string[] manymessege)
         {
             mes = manymessege.ToString();
-            mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';', '>', '<' ,'-'}, StringSplitOptions.RemoveEmptyEntries);
+            mesward = mes.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';', '>', '<' ,'-', '\n' }, StringSplitOptions.RemoveEmptyEntries);
         }
         public string Mes
         {
@@ -117,13 +117,13 @@ namespace BC_HW_L5_Malov
             Console.WriteLine($"Будут удалены все слова, заканчивающиеся на символ {end}: ");
             Console.ForegroundColor = ConsoleColor.Red;
             for (int i = 0; i < mesward.Length; i++)
-                if (mesward[i][mesward.Length - 1] == end)
+                if (mesward[i][mesward[i].Length - 1] == end)
                 {
                     Console.Write($"{mesward[i]} |");
                     delwardmes.Replace(mesward[i], "", 0, mesward[i].Length);
                 }
             Console.ResetColor();
-            Console.WriteLine($"Получилась следующая строка :\n"+delwardmes);
+            Console.WriteLine($"\nПолучилась следующая строка :\n"+delwardmes);
             PauseAndClear();
         }
         /// <summary>
@@ -142,7 +142,7 @@ namespace BC_HW_L5_Malov
             PauseAndClear();
         }
         /// <summary>
-        /// Метод аузы и очистки консоли
+        /// Метод паузы и очистки консоли
         /// </summary>
         public void PauseAndClear()
         {
@@ -158,7 +158,7 @@ namespace BC_HW_L5_Malov
         {
             getlongmes = new StringBuilder();
             string[] tempward = mesward;
-            Array.Sort(tempward);
+            tempward = (tempward.OrderBy(a => a.Length)).ToArray<string>();            
             Console.WriteLine($"Максимальная длина слова в сообщении =>{tempward[tempward.Length - 1].Length}\nТакую длину имеют следующие слова:\n");
             Console.ForegroundColor = ConsoleColor.Magenta;
             for (int i = tempward.Length - 1; i >= 0; i--)
@@ -187,21 +187,21 @@ namespace BC_HW_L5_Malov
         /// <param name="str"></param>
         public void IsMyReverseString1(string str)
         {
-            char[] tempstr=((str.Split(new char[] { ' ', '.', ',', '!', '?', ')', '(', ':', ';', '>', '<', '-', '—', '»', '«' }, StringSplitOptions.RemoveEmptyEntries).ToString().ToLower()).ToCharArray());
-            char[] tempwardmes = (mesward.ToString().ToLower()).ToCharArray();
+            char[] tempstr = str.ToLower().ToCharArray();
+            char[] tempwardmes = (mes.ToLower().ToCharArray());
             if (tempwardmes.Length==tempstr.Length)
             {
                 Array.Sort(tempstr);
                 Array.Sort(tempwardmes);
-                if (tempstr == tempwardmes)
+                if (tempstr.ToString() == tempwardmes.ToString())
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine($"Строки {mes} и {str} являются перестановкой друг друга!");
+                    Console.WriteLine($"Строки=> {mes} |и| {str} являются перестановкой друг друга!");
                     PauseAndClear();
                 }
                 else
                 {
-                    Console.WriteLine($"Строка{mes}\n и строка: {str}");
+                    Console.WriteLine($"Строка => {mes}\nи строка=> {str}");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Не являются перестановкой букв друг друга!");
                     PauseAndClear();
@@ -216,14 +216,14 @@ namespace BC_HW_L5_Malov
         {
            if (mes.Select(Char.ToUpper).OrderBy(x => x).SequenceEqual(str.Select(Char.ToUpper).OrderBy(x => x)))
             {
-                Console.WriteLine($"Строка{mes}\n и строка: {str}");
+                Console.WriteLine($"Строка => {mes}\nи строка=> {str}");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Являются перестановкой букв друг друга!");
                 PauseAndClear();
             }
            else
             {
-                Console.WriteLine($"Строка{mes}\n и строка: {str}");
+                Console.WriteLine($"Строка => {mes} \nи строка => {str}");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Не являются перестановкой букв друг друга!");
                 PauseAndClear();
@@ -266,7 +266,7 @@ namespace BC_HW_L5_Malov
                 Console.WriteLine($"---------------------------\nДан следующий текст: {newmes.mes.ToString()}\n------------------------------------");
                 do
                 {
-                    Console.Write("Введите символ, и программа удалит все слова текста,которые заканчиваются на данный символ");
+                    Console.Write("Введите символ, и программа удалит все слова текста,которые заканчиваются на данный символ=> ");
                     if (Char.TryParse(Console.ReadLine(),out char end))
                     {
                         newmes.TrimMyMessege(end);
@@ -294,7 +294,7 @@ namespace BC_HW_L5_Malov
             else
                 if (answer == "0")
             {
-                Console.WriteLine("Спасибо за внимание. Увидимся на следующем уроке");
+                Console.WriteLine("Спасибо за внимание.");
             }
             else
             {

@@ -22,7 +22,9 @@ namespace BC_HW_L6_Malov
                     Task1_2.RunTask1_2();
                 else
                     if (answer == "3")
-                { }
+                    {
+                    MyStudent.RunTask3();
+                    }
                 else
                     if (answer == "0")
                     Console.WriteLine("Good bye! Thanks for your time!)");
